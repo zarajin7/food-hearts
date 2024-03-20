@@ -1,13 +1,22 @@
+@import url(hero.css);
+
 /* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 } */
 
-/* 
-body{
+
+/* body{
     background-color: aqua;
-} */
+}  */
+ body{
+    background: url("../images/zah1.jpg") no-repeat center center/cover;
+    height: 100vh;
+} 
+
+
+
 
 .nav__part{
     display: flex;
