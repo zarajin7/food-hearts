@@ -66,7 +66,7 @@ li a {
 
 }
 
-.side__bar .hide .side__menu li.active a {
+.side__bar .hide .side__menu li.a {
     width: calc(48px-(4px*2));
 }
 
@@ -106,7 +106,17 @@ li a {
   font-size: 20px;
   color: black;
   white-space: nowrap;
+  overflow-x: hidden;
 }
+
+.side__bar .hide .side__menu li.active a {
+    color: blue;
+  
+  }
+  
+  .side__bar .hide .side__menu li.a {
+      width: calc(48px-(4px*2));
+  }
 
 .side__bar .side__menu li a.logout {
   color: red;
