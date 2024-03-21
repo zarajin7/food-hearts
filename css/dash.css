@@ -1,0 +1,121 @@
+.side__bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background: white;
+    z-index: 1000;
+  
+
+}
+
+
+.side__bar a{
+    text-decoration: none;
+}
+
+.side__bar .brand{
+    font-size: 24px;
+    font-weight: 700;
+    height: 56px;
+    display:flex;
+    align-items: center;
+    color:black;
+}
+
+.side__bar .brand .bx{
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.side__bar .side__menu{
+    width: 100%;
+    margin-top: 48px;
+
+}
+
+ul{
+   
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+}
+
+
+.side__bar .side__menu li{
+    height: 48px;
+    background-color: transparent;
+    margin-left: 6px;
+    border-radius: 48px 0 0 40px;
+    padding: 4px;
+
+}
+
+
+.side__bar .side__menu li.active{
+background-color: whitesmoke;
+position: relative;
+z-index: 100;
+}
+
+.side__bar .side__menu li.active::before{
+content: '';
+position: absolute;
+width: 40px;
+height: 40px;
+
+border-radius: 50%;
+top: -40px;
+right: 0;
+box-shadow: 20px 20px 0 gray;
+z-index: -1;
+
+
+
+}
+
+
+
+.side__bar .side__menu li.active::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 50%;
+    top: -40px;
+    right: 0;
+    box-shadow: 20px -20px 0 gray;
+    z-index: -1;
+    
+    
+    
+    }
+
+.side__bar .side__menu li a{
+    width: 100%;
+    height:100% ;
+    display: flex;
+    align-items: center;
+    border-radius: 48px;
+    gap: 2em;
+    font-size: 20px;
+    color: black;
+}
+
+.side__bar .side__menu.top li a:hover{
+    color: blue;
+}
+
+
+.side__bar .side__menu li a .bx{
+    min-width: calc(60px -((4px+6px ) *2)) ;
+    display: flex;
+    align-items: center;
+justify-content: center;
+
+}
