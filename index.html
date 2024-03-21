@@ -1,102 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css\style.css" rel="stylesheet">
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <title>Food Hearts</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Food-hearts</title>
+  </head>
+  <body>
     <head>
-        <nav>
-            <div class="nav__container">
-                <div class="nav__part">
-                    <img src="images/zah_2-removebg-preview.png" width="150vh">
-                    <ul>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Add people</a></li>
-                        <li><a href="#">Add records</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </head>
-
-    <div class="hero">
-        <div class="hero__content">
-          
-            <div class="hero__content-list">
-                <h1>Login</h1>
-                <form action="#">
-                    <div class="input__box">
-                      <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                      <input type="Email" required />
-                      <label>Email</label>
-                    </div>
-                    <div class="input__box">
-                      <span class="icon"><ion-icon name="lock"></ion-icon></span>
-                      <input type="password" required />
-                      <label>password</label>
-                    </div>
-                    <div class="remember-forget">
-                      <label><input type="checkbox" />Remember me</label>
-                      <a href="#">forgot password?</a>
-                    </div>
-                    <button type="submit" class="btnn">Login</button>
-                    <div class="login__regestration">
-                      <p>
-                        Don't have an account?<a href="#" class="register__link"
-                          >Register</a
-                        >
-                      </p>
-                    </div>
-                  </form>
-                </div>
-
-
-
-        <div class="hero__content-register">
-            <h1>Registration</h1>
-            <form action="#">
-              <div class="input__box">
-                <span class="icon"><ion-icon name="person"></ion-icon></span>
-                <input type="Text" required />
-                <label>User name</label>
-              </div>
-
-           
-              <div class="input__box">
-                <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                <input type="Email" required />
-                <label>Email</label>
-              </div>
-              <div class="input__box">
-                <span class="icon"><ion-icon name="lock"></ion-icon></span>
-                <input type="password" required />
-                <label>password</label>
-              </div>
-              <div class="remember-forget">
-                <label
-                  ><input type="checkbox" />I agree to the terms &
-                  conditions</label
-                >
-              </div>
-              <button type="submit" class="btnn">Register</button>
-              <div class="login__regestration">
-                <p>
-                  Already have an account?<a href="#" class="login__link"
-                    >Login</a
-                  >
-                </p>
-              </div>
-            </form>
+      <nav>
+        <div class="nav__container">
+          <div class="nav__part">
+            <img src="images/zah_2-removebg-preview.png" width="150vh" />
+            <ul>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Add people</a></li>
+              <li><a href="#">Add records</a></li>
+              <li><a href="#">Dashboard</a></li>
+            </ul>
           </div>
-                
-            </div>
         </div>
-    </div>
-</body>
+      </nav>
+    </head>
+<form class="form">
+    <div class="Register__box">
+    <h1>Register</h1>
+    <form>
+      <lable>First name</lable>
+      <input type="text" placeholder="" />
+
+      <lable>Last name</lable>
+      <input type="text" placeholder="" />
+
+      <lable>Email</lable>
+      <input type="email" placeholder="" />
+
+      <lable>Password</lable>
+      <input type="password" placeholder="" />
+
+      <lable>Confirm password</lable>
+      <input type="password" placeholder="" />
+
+      <input type="button" value="submit" />
+    </form>
+
+    <p>
+      By clicking this,you agree to our <br /><a href="">Terms & conditions</a>and<a href="#">Policy Privacy</a>
+    </p>
+  </div>
+</form>
+  <p class="p2">Already have an account? <a href="login.html">Login</a></p>
+
+  </body>
 </html>
