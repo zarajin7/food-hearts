@@ -1,0 +1,33 @@
+
+  
+
+ .footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    background-color: #3498DB;
+    text-align: center;
+
+    
+ }
+ footer{
+    height: 40vh;
+    width: 100%;
+ }
+  .footer__section a{
+    list-style-type: none;
+  
+    color: black;
+   
+  }
+
+  .footer__section h4{
+    color: bisque;
+  }
+
+  .footer__section ul li :hover{
+    background-color: transparent;
+    cursor: pointer;
+    color: #000099;
+  }
