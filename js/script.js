@@ -17,4 +17,11 @@ const sidebar=document.querySelector('.side__bar');
 menubar.addEventListener('click',function(){
     // alert("what")
     sidebar.classList.toggle('hide');
+
+    
 })
+
+
+if(window.innerWidth < 623){
+    sidebar.classList.add('hide')
+}

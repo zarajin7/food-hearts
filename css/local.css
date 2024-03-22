@@ -1,0 +1,12 @@
+.form__content{
+    min-height: 100vh;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.form__content input{
+    margin: 2px;
+    padding: 6px;
+    
+}

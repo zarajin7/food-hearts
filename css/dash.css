@@ -6,19 +6,17 @@
   height: 100%;
   background: white;
   z-index: 1000;
-  transition: 3s ease;
+  transition: 2s ease;
   overflow-x: hidden;
 }
-
 
 .side__bar a {
   text-decoration: none;
 }
 
-.side__bar.hide{
-    width: 60px;
+.side__bar.hide {
+  width: 60px;
 }
-
 
 .side__bar .brand {
   font-size: 24px;
@@ -63,11 +61,10 @@ li a {
 
 .side__bar .hide .side__menu li.active a {
   color: blue;
-
 }
 
 .side__bar .hide .side__menu li.a {
-    width: calc(48px-(4px*2));
+  width: calc(48px- (4px * 2));
 }
 
 .side__bar .side__menu li.active::before {
@@ -110,13 +107,13 @@ li a {
 }
 
 .side__bar .hide .side__menu li.active a {
-    color: blue;
-  
-  }
-  
-  .side__bar .hide .side__menu li.a {
-      width: calc(48px-(4px*2));
-  }
+  color: blue;
+}
+
+.side__bar .hide .side__menu li.a {
+  width: calc(46px - (3px * 2));
+  transition: width.3s ease;
+}
 
 .side__bar .side__menu li a.logout {
   color: red;
@@ -135,9 +132,16 @@ li a {
 
 .content {
   position: relative;
-  width: calc(100%-280px);
+  width: calc(100% - 280px);
   left: 280px;
+  transition: 3s ease;
+  /* left: 60px; */
   /* margin-left: 30%; */
+}
+
+.side__bar .hide .content{
+    width: calc(100% - 60px);
+
 }
 
 .content nav {
@@ -151,16 +155,16 @@ li a {
   position: relative;
 }
 
-.content nav::before{
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    /* background-color: blue; */
-    bottom: -40px;
-    left: 8px;
-    border-radius: 50%;
-    box-shadow: 20px 20px whitesmoke;
+.content nav::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  /* background-color: blue; */
+  bottom: -40px;
+  left: 8px;
+  border-radius: 50%;
+  box-shadow: 20px 20px whitesmoke;
 }
 
 .content nav a {
@@ -174,6 +178,7 @@ li a {
 .content nav .nav__link {
   font-size: 1em;
   transition: 3s ease;
+  
 }
 
 .content nav .nav__link:hover {
@@ -238,9 +243,80 @@ li a {
   align-items: center;
 }
 
-.content nav .profiles img{
-width: 36px;
-height: 36px;
-object-fit: cover;
-border-radius: 50%;
+.content nav .profiles img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.content main{
+  width: 100%;
+  padding: 36px 24px;
+}
+
+.content main .head__title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap:wrap ;
+}
+
+
+.content main .head__title .left h1{
+font-size: 36px;
+font-weight: 600;
+margin-bottom: 10px;
+color: black;
+}
+
+.content main .head__title .left .breadcrumb{
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:623){
+    .content {
+      
+        width: calc(100%-60px);
+       
+     
+      }
+    
+}
+
+
+
+
+
+
+@media screen and (max-width:384){
+    .content {
+    
+        .content nav .nav__link{
+            display: none;
+        }
+
+        .content nav .form__input{
+            display: none;
+        }
+
+        .content nav .form__input button {
+            width: auto;
+            height: auto;
+            background-color: transparent;
+            border-radius: none;
+            color: dark;
+        }
+     
+      }
+    
 }
