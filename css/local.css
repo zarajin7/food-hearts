@@ -1,12 +1,26 @@
-.form__content{
-    min-height: 100vh;
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
+* {
+    box-sizing: border-box;
 }
 
-.form__content input{
-    margin: 2px;
-    padding: 6px;
-    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 16px 16px 0 16px;
+    }
 }

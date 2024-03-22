@@ -25,3 +25,44 @@ menubar.addEventListener('click',function(){
 if(window.innerWidth < 623){
     sidebar.classList.add('hide')
 }
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('add-people-form');
+    const peopleList = document.getElementById('people-list');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+
+        const person = { name, email };
+
+        let people = getSavedPeople();
+        people.push(person);
+        savePeople(people);
+
+        displayPeople(people);
+    });
+
+    function getSavedPeople() {
+        const people = JSON.parse(localStorage.getItem('people')) || [];
+        return people;
+    }
+
+    function savePeople(people) {
+        localStorage.setItem('people', JSON.stringify(people));
+    }
+
+    function displayPeople(people) {
+        peopleList.innerHTML = '';
+        for (const person of people) {
+            const li = document.createElement('li');
+            li.innerHTML = `<strong>${person.name}</strong>: ${person.email}`;
+            peopleList.appendChild(li);
+        }
+    }
+});

@@ -4,48 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" />
-    <title>Food-hearts</title>
+    <title>food-hearts</title>
 </head>
 <body>
 
-    <head>
-        <nav>
-          <div class="nav__container">
-            <div class="nav__part">
-              <img src="images/zah_2-removebg-preview.png" width="150vh" />
-              <ul>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="add people.html">Add people</a></li>
-                <li><a href="localstorage.html">local storage</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </head>
 
-
-
-    <form class="form__content" onsubmit="">
-        <div>
-            <label>Full name</label>
-            <input type="text" required/>
+  <head>
+    <nav>
+      <div class="nav__container">
+        <div class="nav__part">
+          <img src="images/zah_2-removebg-preview.png" width="150vh" />
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="add people.html">Add people</a></li>
+            <li><a href="localstorage.html">local storage</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+          </ul>
         </div>
-        <div>
-            <label>Gender</label>
-            <input type="radio" name="gender" required/>Male
-            <input type="radio" name="gender"/>Female
-        </div>
-        <div>
-            <label>Date of birth</label>
-            <input type="date" required/>
-        </div>
-
-        <div>
-            <label>Email</label>
-            <input type="email" required/>
-        </div>
-        <input type="submit" value="submit">
-    </form>
+      </div>
+    </nav>
+  </head>
+    <div class="container">
+        <h1>Add People</h1>
+        <form id="add-people-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <button type="submit">Add Person</button>
+        </form>
+        <hr>
+        <h2>People List</h2>
+        <ul id="people-list"></ul>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
